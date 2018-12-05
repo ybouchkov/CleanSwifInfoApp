@@ -14,9 +14,6 @@
 
 + Navigate to the folder containing the Podfile in your Terminal app.
 + Now install the pod (and any other necessary project dependencies) by executing the command: `pod install`.
-+ Open *MyWebGrocer.xcworkspace* and build.
-
-> **NB! Steps above are necessary only if you've decided to not add Pods folder to git repository.**
 
 ### OTHER
 
