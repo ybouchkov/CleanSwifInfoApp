@@ -45,6 +45,9 @@
 		26ACA81821B15B8E00C18211 /* AccountMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ACA81721B15B8E00C18211 /* AccountMenuTableViewCell.swift */; };
 		26ACA81C21B18BBC00C18211 /* SlideMenuDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ACA81B21B18BBC00C18211 /* SlideMenuDataProvider.swift */; };
 		26ACA81F21B18E5900C18211 /* ListViewCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ACA81E21B18E5900C18211 /* ListViewCompatible.swift */; };
+		26C16C9F21C0FCFE00A380A0 /* ItemRow1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C16C9E21C0FCFE00A380A0 /* ItemRow1TableViewCell.swift */; };
+		26C16CA321C1241000A380A0 /* SeparatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C16CA221C1241000A380A0 /* SeparatorTableViewCell.swift */; };
+		26D2F93B21BFE63D003FB42E /* HeaderTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D2F93A21BFE63D003FB42E /* HeaderTitleTableViewCell.swift */; };
 		3100CCAF623DC96AF0EA51DD /* Pods_CleanSwiftInfoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2098D5FB92A7EC51D1007A01 /* Pods_CleanSwiftInfoAppTests.framework */; };
 		E496F7947C1932922021A47B /* Pods_CleanSwiftInfoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3877067C4B790E3C95034C9 /* Pods_CleanSwiftInfoAppUITests.framework */; };
 		ECE3B5F3CDD9035038D2A9A4 /* Pods_CleanSwiftInfoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0C64878BF6B88A7467C37E /* Pods_CleanSwiftInfoApp.framework */; };
@@ -114,6 +117,9 @@
 		26ACA81721B15B8E00C18211 /* AccountMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountMenuTableViewCell.swift; sourceTree = "<group>"; };
 		26ACA81B21B18BBC00C18211 /* SlideMenuDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuDataProvider.swift; sourceTree = "<group>"; };
 		26ACA81E21B18E5900C18211 /* ListViewCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCompatible.swift; sourceTree = "<group>"; };
+		26C16C9E21C0FCFE00A380A0 /* ItemRow1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow1TableViewCell.swift; sourceTree = "<group>"; };
+		26C16CA221C1241000A380A0 /* SeparatorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorTableViewCell.swift; sourceTree = "<group>"; };
+		26D2F93A21BFE63D003FB42E /* HeaderTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitleTableViewCell.swift; sourceTree = "<group>"; };
 		A3877067C4B790E3C95034C9 /* Pods_CleanSwiftInfoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanSwiftInfoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0C64878BF6B88A7467C37E /* Pods_CleanSwiftInfoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanSwiftInfoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1064F268C79D5E62BD62F33 /* Pods-CleanSwiftInfoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanSwiftInfoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleanSwiftInfoApp/Pods-CleanSwiftInfoApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -348,6 +354,9 @@
 			isa = PBXGroup;
 			children = (
 				26ACA81721B15B8E00C18211 /* AccountMenuTableViewCell.swift */,
+				26D2F93A21BFE63D003FB42E /* HeaderTitleTableViewCell.swift */,
+				26C16C9E21C0FCFE00A380A0 /* ItemRow1TableViewCell.swift */,
+				26C16CA221C1241000A380A0 /* SeparatorTableViewCell.swift */,
 			);
 			path = SlidingMenu;
 			sourceTree = "<group>";
@@ -604,6 +613,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				263E49B621AEF16F00FEA74E /* SlideMenuItemViewModel.swift in Sources */,
+				26D2F93B21BFE63D003FB42E /* HeaderTitleTableViewCell.swift in Sources */,
 				26ACA81C21B18BBC00C18211 /* SlideMenuDataProvider.swift in Sources */,
 				263E499921AEC9D100FEA74E /* UIStoryboard+.swift in Sources */,
 				263E499B21AECAA400FEA74E /* String+.swift in Sources */,
@@ -623,6 +633,8 @@
 				263E49B321AEEBD900FEA74E /* SlideViewConfigurator.swift in Sources */,
 				26ACA81821B15B8E00C18211 /* AccountMenuTableViewCell.swift in Sources */,
 				26ACA81F21B18E5900C18211 /* ListViewCompatible.swift in Sources */,
+				26C16CA321C1241000A380A0 /* SeparatorTableViewCell.swift in Sources */,
+				26C16C9F21C0FCFE00A380A0 /* ItemRow1TableViewCell.swift in Sources */,
 				2655049821B55C40000864D0 /* UIImageView+.swift in Sources */,
 				26189B9D21B006F800CC9245 /* HomeViewInteractor.swift in Sources */,
 				263E49A221AED3B600FEA74E /* NavigationViewController.swift in Sources */,

@@ -16,6 +16,7 @@ enum AppColors: String {
     case backgroundItemsColor
     case redItemsColor
     case imageBorderColor
+    case textGrayColor
     
     var colorName: String {
         return rawValue
@@ -47,10 +48,10 @@ extension UIColor {
         return UIColor(named: AppColors.imageBorderColor.colorName) ?? .white
     }
     
-    class var textBlackColor: UIColor {
-        return UIColor(named: "textBlackColor")!
+    class var textGrayColor: UIColor {
+        return UIColor(named: AppColors.textGrayColor.colorName) ?? .white
     }
-
+    
 }
 
 

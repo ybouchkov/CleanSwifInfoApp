@@ -20,7 +20,18 @@ class SlideViewInteractor: SlideViewBuisnessLogic {
     // MARK: - SlideViewBuisnessLogic
     func prepareMenuItems() {
         let menuItemActions: [SlideMenuActionType] = [
-            .account
+            .account,
+            .firstSection,
+            .itemRow1,
+            .itemRow2,
+            .itemRow3,
+            .itemRow4,
+            .itemRow5,
+            .separator,
+            .more,
+            .secondSectionRow1,
+            .secondSectionRow2,
+            .separator
         ]
         let response = SlideMenuItemResponse(actions: menuItemActions)
         presenter?.presentMenuItems(response: response)

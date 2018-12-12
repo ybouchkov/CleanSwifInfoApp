@@ -34,6 +34,18 @@ enum SlideMenuRepresentableItemFactory {
         switch action {
         case .account:
             return "AccountMenuItemCell"
+        case .firstSection, .more:
+            return "SectionHeaderTitleCell"
+        case .itemRow1,
+             .itemRow2,
+             .itemRow3,
+             .itemRow4,
+             .itemRow5,
+             .secondSectionRow1,
+             .secondSectionRow2:
+            return "ItemRow1TableViewCell"
+        case .separator:
+            return "SpaceTableViewCell"
         }
     }
 }

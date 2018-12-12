@@ -10,10 +10,20 @@ import UIKit
 
 /// All menu items
 enum SlideMenuActionType {
+    // Maybe you can add some header here
     case account
-
-    // MARK: Images for every item
-    // For example: Here, there is only one image for evey case
+    
+    // Other section
+    case firstSection
+    case itemRow1
+    case itemRow2
+    case itemRow3
+    case itemRow4
+    case itemRow5
+    case more
+    case secondSectionRow1
+    case secondSectionRow2
+    case separator
 }
 
 class SlideMenuItem {

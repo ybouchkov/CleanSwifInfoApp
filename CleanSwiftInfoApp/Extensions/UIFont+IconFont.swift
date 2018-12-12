@@ -13,6 +13,11 @@ enum MWGIconFont: UInt32 {
     
     case home = 0xe900
     case profile = 0xe907
+    case edit = 0xe906
+    case office = 0xe903
+    case newspaper = 0xe904
+    case dice = 0xe915
+    
     // TODO: Other Icons
     
     public func attributedString(size: CGFloat = CGFloat(12),
