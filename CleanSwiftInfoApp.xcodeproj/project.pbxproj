@@ -31,14 +31,21 @@
 		263E49B321AEEBD900FEA74E /* SlideViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263E49B221AEEBD900FEA74E /* SlideViewConfigurator.swift */; };
 		263E49B621AEF16F00FEA74E /* SlideMenuItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263E49B521AEF16F00FEA74E /* SlideMenuItemViewModel.swift */; };
 		263E49B821AEF1F900FEA74E /* SlideMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263E49B721AEF1F900FEA74E /* SlideMenuItem.swift */; };
-		2655048F21B52ED7000864D0 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2655048C21B52ED2000864D0 /* Montserrat-Bold.otf */; };
 		2655049021B52ED7000864D0 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2655048E21B52ED2000864D0 /* Montserrat-Light.otf */; };
-		2655049121B52ED7000864D0 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2655048B21B52ED2000864D0 /* Montserrat-Regular.otf */; };
 		2655049221B52ED7000864D0 /* Montserrat-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2655048D21B52ED2000864D0 /* Montserrat-Thin.otf */; };
 		2655049421B52EF6000864D0 /* UIFont+Montserrat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655049321B52EF6000864D0 /* UIFont+Montserrat.swift */; };
 		2655049821B55C40000864D0 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655049721B55C40000864D0 /* UIImageView+.swift */; };
 		265DA15521B6B30B005D4AEF /* UIFont+IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DA15421B6B30B005D4AEF /* UIFont+IconFont.swift */; };
 		265DA15721B6B56D005D4AEF /* MWG-Iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 265DA15621B6B56D005D4AEF /* MWG-Iconfont.ttf */; };
+		2661B51A21C3AB0E00CC6F2F /* SnapKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2661B51921C3AB0E00CC6F2F /* SnapKitView.swift */; };
+		2661B51E21C3D88400CC6F2F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2661B51C21C3D88400CC6F2F /* Montserrat-Regular.ttf */; };
+		2661B51F21C3D88400CC6F2F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2661B51D21C3D88400CC6F2F /* Montserrat-Bold.ttf */; };
+		269C599121C28C63007DCF39 /* Snapkit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269C599021C28C63007DCF39 /* Snapkit.storyboard */; };
+		269C599621C28CCB007DCF39 /* SnapKitConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269C599521C28CCB007DCF39 /* SnapKitConfigurator.swift */; };
+		269C599821C28CDB007DCF39 /* SnapKitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269C599721C28CDB007DCF39 /* SnapKitPresenter.swift */; };
+		269C599A21C28CE6007DCF39 /* SnapKitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269C599921C28CE6007DCF39 /* SnapKitRouter.swift */; };
+		269C599C21C28CF4007DCF39 /* SnapKitInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269C599B21C28CF4007DCF39 /* SnapKitInteractor.swift */; };
+		269C599E21C28D3F007DCF39 /* SnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269C599D21C28D3F007DCF39 /* SnapKitViewController.swift */; };
 		26ACA81221B131B100C18211 /* ArrayDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ACA81021B131B100C18211 /* ArrayDataProvider.swift */; };
 		26ACA81321B131B100C18211 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ACA81121B131B100C18211 /* DataProvider.swift */; };
 		26ACA81521B157D600C18211 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ACA81421B157D600C18211 /* UIColor+.swift */; };
@@ -103,14 +110,21 @@
 		263E49B221AEEBD900FEA74E /* SlideViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewConfigurator.swift; sourceTree = "<group>"; };
 		263E49B521AEF16F00FEA74E /* SlideMenuItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuItemViewModel.swift; sourceTree = "<group>"; };
 		263E49B721AEF1F900FEA74E /* SlideMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuItem.swift; sourceTree = "<group>"; };
-		2655048B21B52ED2000864D0 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
-		2655048C21B52ED2000864D0 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
 		2655048D21B52ED2000864D0 /* Montserrat-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.otf"; sourceTree = "<group>"; };
 		2655048E21B52ED2000864D0 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
 		2655049321B52EF6000864D0 /* UIFont+Montserrat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Montserrat.swift"; sourceTree = "<group>"; };
 		2655049721B55C40000864D0 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		265DA15421B6B30B005D4AEF /* UIFont+IconFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+IconFont.swift"; sourceTree = "<group>"; };
 		265DA15621B6B56D005D4AEF /* MWG-Iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MWG-Iconfont.ttf"; sourceTree = "<group>"; };
+		2661B51921C3AB0E00CC6F2F /* SnapKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitView.swift; sourceTree = "<group>"; };
+		2661B51C21C3D88400CC6F2F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		2661B51D21C3D88400CC6F2F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		269C599021C28C63007DCF39 /* Snapkit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Snapkit.storyboard; sourceTree = "<group>"; };
+		269C599521C28CCB007DCF39 /* SnapKitConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitConfigurator.swift; sourceTree = "<group>"; };
+		269C599721C28CDB007DCF39 /* SnapKitPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitPresenter.swift; sourceTree = "<group>"; };
+		269C599921C28CE6007DCF39 /* SnapKitRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitRouter.swift; sourceTree = "<group>"; };
+		269C599B21C28CF4007DCF39 /* SnapKitInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitInteractor.swift; sourceTree = "<group>"; };
+		269C599D21C28D3F007DCF39 /* SnapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitViewController.swift; sourceTree = "<group>"; };
 		26ACA81021B131B100C18211 /* ArrayDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataProvider.swift; sourceTree = "<group>"; };
 		26ACA81121B131B100C18211 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		26ACA81421B157D600C18211 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
@@ -243,6 +257,7 @@
 				263E496821AEC7D900FEA74E /* Main.storyboard */,
 				263E499621AEC9BA00FEA74E /* Menu.storyboard */,
 				26189B9421B005EE00CC9245 /* Home.storyboard */,
+				269C599021C28C63007DCF39 /* Snapkit.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -252,6 +267,7 @@
 			children = (
 				263E49A421AEEA8300FEA74E /* Home */,
 				263E49A521AEEA8D00FEA74E /* Slide */,
+				269C599221C28C9B007DCF39 /* SnapKitTutorial */,
 				263E49A121AED3B600FEA74E /* NavigationViewController.swift */,
 			);
 			path = Scenes;
@@ -275,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				26ACA81621B15B3200C18211 /* SlidingMenu */,
+				2661B51B21C3AD1500CC6F2F /* SnapKit */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -325,9 +342,9 @@
 			isa = PBXGroup;
 			children = (
 				265DA14B21B697DC005D4AEF /* MWG-Iconfont */,
-				2655048C21B52ED2000864D0 /* Montserrat-Bold.otf */,
+				2661B51C21C3D88400CC6F2F /* Montserrat-Regular.ttf */,
+				2661B51D21C3D88400CC6F2F /* Montserrat-Bold.ttf */,
 				2655048E21B52ED2000864D0 /* Montserrat-Light.otf */,
-				2655048B21B52ED2000864D0 /* Montserrat-Regular.otf */,
 				2655048D21B52ED2000864D0 /* Montserrat-Thin.otf */,
 			);
 			path = Font;
@@ -339,6 +356,26 @@
 				265DA15621B6B56D005D4AEF /* MWG-Iconfont.ttf */,
 			);
 			path = "MWG-Iconfont";
+			sourceTree = "<group>";
+		};
+		2661B51B21C3AD1500CC6F2F /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				2661B51921C3AB0E00CC6F2F /* SnapKitView.swift */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		269C599221C28C9B007DCF39 /* SnapKitTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				269C599D21C28D3F007DCF39 /* SnapKitViewController.swift */,
+				269C599521C28CCB007DCF39 /* SnapKitConfigurator.swift */,
+				269C599721C28CDB007DCF39 /* SnapKitPresenter.swift */,
+				269C599921C28CE6007DCF39 /* SnapKitRouter.swift */,
+				269C599B21C28CF4007DCF39 /* SnapKitInteractor.swift */,
+			);
+			path = SnapKitTutorial;
 			sourceTree = "<group>";
 		};
 		26ACA80F21B1318A00C18211 /* DataProvider */ = {
@@ -491,12 +528,13 @@
 				26189B9521B005EE00CC9245 /* Home.storyboard in Resources */,
 				265DA15721B6B56D005D4AEF /* MWG-Iconfont.ttf in Resources */,
 				263E496C21AEC7DC00FEA74E /* Assets.xcassets in Resources */,
-				2655049121B52ED7000864D0 /* Montserrat-Regular.otf in Resources */,
 				2655049221B52ED7000864D0 /* Montserrat-Thin.otf in Resources */,
 				263E496A21AEC7D900FEA74E /* Main.storyboard in Resources */,
+				269C599121C28C63007DCF39 /* Snapkit.storyboard in Resources */,
 				263E499721AEC9BA00FEA74E /* Menu.storyboard in Resources */,
+				2661B51E21C3D88400CC6F2F /* Montserrat-Regular.ttf in Resources */,
+				2661B51F21C3D88400CC6F2F /* Montserrat-Bold.ttf in Resources */,
 				2655049021B52ED7000864D0 /* Montserrat-Light.otf in Resources */,
-				2655048F21B52ED7000864D0 /* Montserrat-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,12 +565,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CleanSwiftInfoApp/Pods-CleanSwiftInfoApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -615,6 +655,12 @@
 				263E49B621AEF16F00FEA74E /* SlideMenuItemViewModel.swift in Sources */,
 				26D2F93B21BFE63D003FB42E /* HeaderTitleTableViewCell.swift in Sources */,
 				26ACA81C21B18BBC00C18211 /* SlideMenuDataProvider.swift in Sources */,
+				269C599E21C28D3F007DCF39 /* SnapKitViewController.swift in Sources */,
+				269C599821C28CDB007DCF39 /* SnapKitPresenter.swift in Sources */,
+				269C599621C28CCB007DCF39 /* SnapKitConfigurator.swift in Sources */,
+				269C599C21C28CF4007DCF39 /* SnapKitInteractor.swift in Sources */,
+				269C599A21C28CE6007DCF39 /* SnapKitRouter.swift in Sources */,
+				2661B51A21C3AB0E00CC6F2F /* SnapKitView.swift in Sources */,
 				263E499921AEC9D100FEA74E /* UIStoryboard+.swift in Sources */,
 				263E499B21AECAA400FEA74E /* String+.swift in Sources */,
 				263E49B821AEF1F900FEA74E /* SlideMenuItem.swift in Sources */,

@@ -17,6 +17,8 @@ enum AppColors: String {
     case redItemsColor
     case imageBorderColor
     case textGrayColor
+    case containerViewBGColor
+    case innerViewBGColor
     
     var colorName: String {
         return rawValue
@@ -50,6 +52,15 @@ extension UIColor {
     
     class var textGrayColor: UIColor {
         return UIColor(named: AppColors.textGrayColor.colorName) ?? .white
+    }
+    
+    // Using for snapKit Scene
+    class var containerViewBGColor: UIColor {
+        return UIColor(named: AppColors.containerViewBGColor.colorName) ?? .red
+    }
+    
+    class var innerViewBGColor: UIColor {
+        return UIColor(named: AppColors.innerViewBGColor.colorName) ?? .red
     }
     
 }

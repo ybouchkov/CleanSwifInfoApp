@@ -31,12 +31,12 @@ class SlideViewPresenter: SlideViewPresentationLogic {
             case .firstSection:
                 menuItem = SlideMenuItemViewModel(for: .firstSection, at: 1)
                 setupHeaderTitleCellViewModel(menuItem, "Section Title") // should be localized!
-            case .itemRow1:
-                menuItem = SlideMenuItemViewModel(for: .itemRow1, at: 2)
-                setupActionTitleCellViewModel(menuItem, "ItemRow1", .edit)
-            case .itemRow2:
-                menuItem = SlideMenuItemViewModel(for: .itemRow2, at: 3)
-                setupActionTitleCellViewModel(menuItem, "ItemRow2", .office)
+            case .snapKitTutorial:
+                menuItem = SlideMenuItemViewModel(for: .snapKitTutorial, at: 2)
+                setupActionTitleCellViewModel(menuItem, "SnapKit Example", .edit)
+            case .home:
+                menuItem = SlideMenuItemViewModel(for: .home, at: 3)
+                setupActionTitleCellViewModel(menuItem, "Home", .office)
             case .itemRow3:
                 menuItem = SlideMenuItemViewModel(for: .itemRow3, at: 4)
                 setupActionTitleCellViewModel(menuItem, "ItemRow3", .newspaper)

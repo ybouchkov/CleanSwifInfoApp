@@ -22,8 +22,8 @@ class SlideViewInteractor: SlideViewBuisnessLogic {
         let menuItemActions: [SlideMenuActionType] = [
             .account,
             .firstSection,
-            .itemRow1,
-            .itemRow2,
+            .snapKitTutorial,
+            .home,
             .itemRow3,
             .itemRow4,
             .itemRow5,

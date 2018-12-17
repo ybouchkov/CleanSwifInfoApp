@@ -84,3 +84,12 @@ extension SlideViewController {
         return cell
     }
 }
+
+// MARK: - UITableViewDelegate
+extension SlideViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        guard let model = self.menuProvider[indexPath] else { fatalError("Cannot find the row") }
+        router?.navigateTo(selectedMenuItem: model)
+    }
+}

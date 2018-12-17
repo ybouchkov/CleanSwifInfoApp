@@ -36,8 +36,8 @@ enum SlideMenuRepresentableItemFactory {
             return "AccountMenuItemCell"
         case .firstSection, .more:
             return "SectionHeaderTitleCell"
-        case .itemRow1,
-             .itemRow2,
+        case .snapKitTutorial,
+             .home,
              .itemRow3,
              .itemRow4,
              .itemRow5,

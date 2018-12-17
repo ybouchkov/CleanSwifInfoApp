@@ -27,6 +27,38 @@ extension UIViewController {
 // MARK: - UIViewController+MethodSwizzling
 extension UIViewController {
     
+    @objc
+    func newViewDidLoad() {
+        self.newViewDidLoad()
+        
+        // Remove the title frin Back
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "",
+                                                           style: .plain,
+                                                           target: nil,
+                                                           action: nil)
+        
+        // Adding on every single view controller menuBarButtonItem
+        self.navigationItem.leftBarButtonItem = menuBarButtoItem
+        // ??? Do something else
+    }
+    
+    static func swizzleViewDidLoad() {
+        // !!! Make sure This isn't a subclass of UIViewController,
+        // so that It applies to all UIViewController childs
+        if self != UIViewController.self {
+            return
+        }
+        
+        let _: () = {
+            let originalSelector = #selector(UIViewController.viewDidLoad)
+            let swizzledSelector = #selector(UIViewController.newViewDidLoad)
+            let originalMethod = class_getInstanceMethod(self, originalSelector)
+            let swizzledMethod = class_getInstanceMethod(self, swizzledSelector)
+            method_exchangeImplementations(originalMethod!, swizzledMethod!)
+        }()
+    }
+
+    
     /// Custom hamburger menu btn
     var menuBarButtoItem: UIBarButtonItem {
         let button = UIButton(type: .custom)

@@ -15,8 +15,8 @@ enum SlideMenuActionType {
     
     // Other section
     case firstSection
-    case itemRow1
-    case itemRow2
+    case snapKitTutorial
+    case home
     case itemRow3
     case itemRow4
     case itemRow5

@@ -9,6 +9,10 @@ target 'CleanSwiftInfoApp' do
   
   #SlideMenu
   pod 'SideMenu'
+  
+  #Layout Constraints
+  pod 'SnapKit', '~> 4.0.0'
+
 
   target 'CleanSwiftInfoAppTests' do
     inherit! :search_paths
