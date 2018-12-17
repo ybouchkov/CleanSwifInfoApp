@@ -11,7 +11,7 @@ import UIKit
 class HomeViewConfigurator {
     
     // MARK: - Singleton
-    static var shared: HomeViewConfigurator = HomeViewConfigurator()
+    static var shared = HomeViewConfigurator()
     
     // MARK: Init
     private init() {}
@@ -27,9 +27,7 @@ class HomeViewConfigurator {
         presenter.viewController = viewController
         interactor.presenter = presenter
         router.viewController = viewController
-        // setup dataSource here ...
+        // Setup dataSource here ...
         
     }
 }
-
-

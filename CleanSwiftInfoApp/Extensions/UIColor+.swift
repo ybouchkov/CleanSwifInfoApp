@@ -25,7 +25,6 @@ enum AppColors: String {
     }
 }
 
-
 extension UIColor {
     
     // MARK: - UIColors + Brand
@@ -64,5 +63,3 @@ extension UIColor {
     }
     
 }
-
-

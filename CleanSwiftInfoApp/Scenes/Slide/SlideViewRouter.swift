@@ -9,10 +9,12 @@
 import UIKit
 
 protocol SlideViewRoutingLogic {
+    
     func navigateTo(selectedMenuItem item: SlideMenuItem)
 }
 
 class SlideViewRouter: SlideViewRoutingLogic {
+    
     weak var viewController: SlideViewController?
     
     // MARK: - SlideViewRoutingLogic

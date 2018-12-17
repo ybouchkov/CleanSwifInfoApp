@@ -18,6 +18,7 @@ class AccountMenuTableViewCell: UITableViewCell {
     // MARK: - Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         setup()
     }
     

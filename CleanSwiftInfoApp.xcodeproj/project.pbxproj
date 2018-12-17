@@ -31,8 +31,6 @@
 		263E49B321AEEBD900FEA74E /* SlideViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263E49B221AEEBD900FEA74E /* SlideViewConfigurator.swift */; };
 		263E49B621AEF16F00FEA74E /* SlideMenuItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263E49B521AEF16F00FEA74E /* SlideMenuItemViewModel.swift */; };
 		263E49B821AEF1F900FEA74E /* SlideMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263E49B721AEF1F900FEA74E /* SlideMenuItem.swift */; };
-		2655049021B52ED7000864D0 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2655048E21B52ED2000864D0 /* Montserrat-Light.otf */; };
-		2655049221B52ED7000864D0 /* Montserrat-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2655048D21B52ED2000864D0 /* Montserrat-Thin.otf */; };
 		2655049421B52EF6000864D0 /* UIFont+Montserrat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655049321B52EF6000864D0 /* UIFont+Montserrat.swift */; };
 		2655049821B55C40000864D0 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655049721B55C40000864D0 /* UIImageView+.swift */; };
 		265DA15521B6B30B005D4AEF /* UIFont+IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DA15421B6B30B005D4AEF /* UIFont+IconFont.swift */; };
@@ -40,6 +38,8 @@
 		2661B51A21C3AB0E00CC6F2F /* SnapKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2661B51921C3AB0E00CC6F2F /* SnapKitView.swift */; };
 		2661B51E21C3D88400CC6F2F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2661B51C21C3D88400CC6F2F /* Montserrat-Regular.ttf */; };
 		2661B51F21C3D88400CC6F2F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2661B51D21C3D88400CC6F2F /* Montserrat-Bold.ttf */; };
+		26909E8421C7CC6000579981 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26909E8221C7CC6000579981 /* Montserrat-Thin.ttf */; };
+		26909E8521C7CC6000579981 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26909E8321C7CC6000579981 /* Montserrat-Light.ttf */; };
 		269C599121C28C63007DCF39 /* Snapkit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269C599021C28C63007DCF39 /* Snapkit.storyboard */; };
 		269C599621C28CCB007DCF39 /* SnapKitConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269C599521C28CCB007DCF39 /* SnapKitConfigurator.swift */; };
 		269C599821C28CDB007DCF39 /* SnapKitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269C599721C28CDB007DCF39 /* SnapKitPresenter.swift */; };
@@ -110,8 +110,6 @@
 		263E49B221AEEBD900FEA74E /* SlideViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewConfigurator.swift; sourceTree = "<group>"; };
 		263E49B521AEF16F00FEA74E /* SlideMenuItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuItemViewModel.swift; sourceTree = "<group>"; };
 		263E49B721AEF1F900FEA74E /* SlideMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuItem.swift; sourceTree = "<group>"; };
-		2655048D21B52ED2000864D0 /* Montserrat-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.otf"; sourceTree = "<group>"; };
-		2655048E21B52ED2000864D0 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
 		2655049321B52EF6000864D0 /* UIFont+Montserrat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Montserrat.swift"; sourceTree = "<group>"; };
 		2655049721B55C40000864D0 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		265DA15421B6B30B005D4AEF /* UIFont+IconFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+IconFont.swift"; sourceTree = "<group>"; };
@@ -119,6 +117,8 @@
 		2661B51921C3AB0E00CC6F2F /* SnapKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitView.swift; sourceTree = "<group>"; };
 		2661B51C21C3D88400CC6F2F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		2661B51D21C3D88400CC6F2F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		26909E8221C7CC6000579981 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		26909E8321C7CC6000579981 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		269C599021C28C63007DCF39 /* Snapkit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Snapkit.storyboard; sourceTree = "<group>"; };
 		269C599521C28CCB007DCF39 /* SnapKitConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitConfigurator.swift; sourceTree = "<group>"; };
 		269C599721C28CDB007DCF39 /* SnapKitPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitPresenter.swift; sourceTree = "<group>"; };
@@ -342,10 +342,10 @@
 			isa = PBXGroup;
 			children = (
 				265DA14B21B697DC005D4AEF /* MWG-Iconfont */,
+				26909E8321C7CC6000579981 /* Montserrat-Light.ttf */,
+				26909E8221C7CC6000579981 /* Montserrat-Thin.ttf */,
 				2661B51C21C3D88400CC6F2F /* Montserrat-Regular.ttf */,
 				2661B51D21C3D88400CC6F2F /* Montserrat-Bold.ttf */,
-				2655048E21B52ED2000864D0 /* Montserrat-Light.otf */,
-				2655048D21B52ED2000864D0 /* Montserrat-Thin.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -428,6 +428,7 @@
 				263E495E21AEC7D900FEA74E /* Frameworks */,
 				263E495F21AEC7D900FEA74E /* Resources */,
 				24BCB238B7A3777475548879 /* [CP] Embed Pods Frameworks */,
+				26909E8621C7CF0700579981 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -524,17 +525,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26909E8421C7CC6000579981 /* Montserrat-Thin.ttf in Resources */,
 				263E496F21AEC7DC00FEA74E /* LaunchScreen.storyboard in Resources */,
 				26189B9521B005EE00CC9245 /* Home.storyboard in Resources */,
 				265DA15721B6B56D005D4AEF /* MWG-Iconfont.ttf in Resources */,
 				263E496C21AEC7DC00FEA74E /* Assets.xcassets in Resources */,
-				2655049221B52ED7000864D0 /* Montserrat-Thin.otf in Resources */,
 				263E496A21AEC7D900FEA74E /* Main.storyboard in Resources */,
+				26909E8521C7CC6000579981 /* Montserrat-Light.ttf in Resources */,
 				269C599121C28C63007DCF39 /* Snapkit.storyboard in Resources */,
 				263E499721AEC9BA00FEA74E /* Menu.storyboard in Resources */,
 				2661B51E21C3D88400CC6F2F /* Montserrat-Regular.ttf in Resources */,
 				2661B51F21C3D88400CC6F2F /* Montserrat-Bold.ttf in Resources */,
-				2655049021B52ED7000864D0 /* Montserrat-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +579,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CleanSwiftInfoApp/Pods-CleanSwiftInfoApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		26909E8621C7CF0700579981 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		32C95CA25AD99BDB8178124F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

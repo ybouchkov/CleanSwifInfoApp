@@ -9,6 +9,7 @@
 import Foundation
 
 protocol HomeViewBuisnessLogic {
+    
     func prepareSomething()
 }
 

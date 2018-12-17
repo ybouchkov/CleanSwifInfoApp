@@ -9,7 +9,8 @@
 import Foundation
 
 protocol SnapKitBuisnessLogic {
-//    func prepareViews(view: UIView)
+    
+    // Note:func prepareViews(view: UIView)
 }
 
 class SnapKitInteractor: SnapKitBuisnessLogic {

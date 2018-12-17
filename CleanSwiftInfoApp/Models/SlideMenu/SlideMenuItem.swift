@@ -27,6 +27,7 @@ enum SlideMenuActionType {
 }
 
 class SlideMenuItem {
+    
     private(set) var action: SlideMenuActionType
     private(set) var position: Int
     
@@ -39,6 +40,7 @@ class SlideMenuItem {
 extension SlideMenuItem: Equatable {
     
     static func == (lhs: SlideMenuItem, rhs: SlideMenuItem) -> Bool {
+        
         return lhs.action == rhs.action && lhs.position == rhs.position
     }
 }

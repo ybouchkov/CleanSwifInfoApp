@@ -14,6 +14,7 @@ class NavigationViewController: UINavigationController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupNavigation()
     }
     
@@ -29,7 +30,9 @@ class NavigationViewController: UINavigationController {
         SideMenuManager.default.menuFadeStatusBar = false
         // Keep right part of the screen visible
         SideMenuManager.default.menuPresentMode = .menuSlideIn
-        /* If a view controller already in the stack is of the same class as the pushed view controller, the stack is instead popped back to the existing view controller.*/
+        /* If a view controller already in the stack is of the same class as the pushed view controller,
+         the stack is instead popped back to the existing view controller.
+        */
         SideMenuManager.defaultManager.menuPushStyle = .popWhenPossible
     }
 

@@ -9,7 +9,8 @@
 import Foundation
 
 protocol SnapKitNavigationLogic {
-    // navigate to somewhere if needed
+    
+    // Navigate to somewhere if needed
 }
 
 class SnapKitRouter: SnapKitNavigationLogic {

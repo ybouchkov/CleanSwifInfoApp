@@ -8,10 +8,6 @@
 
 import UIKit
 
-
-
-// FIRST WAY FOR BETTER HANDLING
-// THE FONTS IN THE APP
 enum MontserratStyle: String {
     case bold
     case light
@@ -41,6 +37,7 @@ enum MontserratStyle: String {
 }
 
 extension UIFont {
+    
     class func montserrat(ofSize fontSize: CGFloat, style: MontserratStyle) -> UIFont? {
         loadMontserratFont(ofStyle: style)
         return UIFont(name: style.fontName(), size: fontSize)
@@ -93,5 +90,3 @@ extension URL {
     }
     
 }
-
-

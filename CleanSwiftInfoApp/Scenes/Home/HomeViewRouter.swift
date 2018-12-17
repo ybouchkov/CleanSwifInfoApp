@@ -9,7 +9,8 @@
 import Foundation
 
 protocol HomeViewRoutingLogic {
-    // func navigateToSomewhere()
+    
+    // Func navigateToSomewhere()
 }
 
 class HomeViewRouter: HomeViewRoutingLogic {

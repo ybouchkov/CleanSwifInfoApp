@@ -17,6 +17,7 @@ class ItemRow1TableViewCell: UITableViewCell {
     // MARK: - Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         setup()
     }
     

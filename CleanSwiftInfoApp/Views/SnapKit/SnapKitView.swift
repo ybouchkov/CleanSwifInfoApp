@@ -17,7 +17,6 @@ class SnapKitView: UIView {
     private var btnView: UIView!
     private var activityIndicator: UIActivityIndicatorView!
 
-    
     private let topInnerViewHeight: CGFloat = 24.0
     private let bottomInnerViewHeight: CGFloat = 36.0
     private let textfieldHeight: CGFloat = 44.0
@@ -35,19 +34,23 @@ class SnapKitView: UIView {
     // MARK: - Init
     init() {
         super.init(frame: CGRect.zero)
+        
         setupContainerView()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
         setupContainerView()
     }
     
     // MARK: - Setup
     
-    /// if the screen width is big enough this constraint will limit the container view’s width and we don’t need the other two
+    /// If the screen width is big enough this constraint will limit the container view’s width
+    /// and we don’t need the other two
     /// (most probably padding will be more than 40px from the left and right edges, so they’ll be practically useless).
-    /// On the other hand, if the screen width is not that big then this constraint is satisfied (width <= 500), so the left and right constraints will apply and we’ll have the minimum offset on left and right.
+    /// On the other hand, if the screen width is not that big then this constraint is satisfied (width <= 500),
+    /// So the left and right constraints will apply and we’ll have the minimum offset on left and right.
     private func setupContainerView() {
         containerView = UIView()
         self.addSubview(containerView)
@@ -74,7 +77,7 @@ class SnapKitView: UIView {
         topView = UIView()
         containerView.addSubview(topView)
         
-        // setup constraints
+        // Setup constraints
         topView.snp.makeConstraints { (make) in
             make.left.equalTo(containerView)
             make.right.equalTo(containerView)
@@ -94,7 +97,7 @@ class SnapKitView: UIView {
         lblTitle.backgroundColor = .clear // no background for the label
         lblTitle.font = UIFont.montserrat(ofSize: 17.0, style: .bold)
         
-        // set constraints
+        // Set constraints
         lblTitle.snp.makeConstraints { (make) in
             make.center.equalTo(topView)
         }
@@ -199,9 +202,13 @@ class SnapKitView: UIView {
         self.setNeedsLayout()
         UIView.animate(withDuration: 0.5, animations: {
             self.layoutIfNeeded()
-        }) { (finished) in
+        }) { finished in
             if finished {
-                self.timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(self.revertLogin), userInfo: nil, repeats: false)
+                self.timer = Timer.scheduledTimer(timeInterval: 3.0,
+                                                  target: self,
+                                                  selector: #selector(self.revertLogin),
+                                                  userInfo: nil,
+                                                  repeats: false)
             }
         }
         isAnimating = true
@@ -210,7 +217,7 @@ class SnapKitView: UIView {
     /// In real case, perform a login
     @objc
     func revertLogin() {
-        // return all textFields and activity indicator to original place
+        // Return all textFields and activity indicator to original place
         txtFieldName.snp.remakeConstraints { (make) in
             make.top.equalTo(topView.snp.bottom).offset(16)
             make.left.equalTo(containerView).offset(8)
@@ -233,7 +240,7 @@ class SnapKitView: UIView {
         
         UIView.animate(withDuration: 0.5, animations: {
             self.layoutIfNeeded()
-        }) { (finished) in
+        }) { finished in
             if finished {
                 self.timer.invalidate()
                 self.timer = nil
@@ -264,8 +271,11 @@ class SnapKitView: UIView {
 
     }
     
-    /// We want the activity indicator to be placed to the center of the viewContainer view when it’s visible, therefore that makes it easy to understand that the centerX and centerY constraints are those two that we set up in order to specify its position.
-    /// However, when it’s hidden, it should be positioned to the top and out of the visible area of the viewContainer view. That means we have to apply a negative offset to the centerY constraint by providing a value that ensures that the activity indicator will be fully out of any visible area.
+    /// We want the activity indicator to be placed to the center of the viewContainer view when it’s visible, therefore that makes
+    /// it easy to understand that the centerX and centerY constraints are those two that we set up in order to specify its position.
+    /// However, when it’s hidden, it should be positioned to the top and out of the visible area of the viewContainer view.
+    /// That means we have to apply a negative offset to the centerY constraint by providing a value that ensures that
+    /// the activity indicator will be fully out of any visible area.
     /// Supposing that its width and height should be 40px, let’s set its constraints up:
     private func setupActivityIndicator() {
         activityIndicator = UIActivityIndicatorView()
@@ -284,6 +294,7 @@ class SnapKitView: UIView {
 }
 
 extension SnapKitView: UITextFieldDelegate {
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == txtFieldName {
             txtFieldPassword.becomeFirstResponder()

@@ -44,7 +44,7 @@ extension UIViewController {
     
     static func swizzleViewDidLoad() {
         // !!! Make sure This isn't a subclass of UIViewController,
-        // so that It applies to all UIViewController childs
+        // So that It applies to all UIViewController childs
         if self != UIViewController.self {
             return
         }
@@ -58,7 +58,6 @@ extension UIViewController {
         }()
     }
 
-    
     /// Custom hamburger menu btn
     var menuBarButtoItem: UIBarButtonItem {
         let button = UIButton(type: .custom)
@@ -84,10 +83,11 @@ extension UIViewController {
     // MARK: - Actions
     @objc
     fileprivate func hamburgerBtnPressed() {
-        guard let menuLeftNavigationController = SideMenuManager.default.menuLeftNavigationController else { return }
+        guard let menuLeftNavigationController = SideMenuManager.default.menuLeftNavigationController else {
+            return
+        }
         present(menuLeftNavigationController,
                 animated: true,
                 completion: nil)
     }
 }
-

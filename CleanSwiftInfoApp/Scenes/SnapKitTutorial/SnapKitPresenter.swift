@@ -10,10 +10,11 @@ import Foundation
 import SnapKit
 
 protocol SnapKitPresentationLogic {
-    // present something
+    
+    // Present something
 }
 
-class SnapKitPresenter: SnapKitPresentationLogic{
+class SnapKitPresenter: SnapKitPresentationLogic {
     
     weak var viewController: SnapKitViewController?
 

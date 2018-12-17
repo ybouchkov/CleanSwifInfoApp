@@ -9,6 +9,7 @@
 import Foundation
 
 struct SlideMenuItemResponse {
+    
     var actions: [SlideMenuActionType]
 }
 

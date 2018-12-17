@@ -10,7 +10,7 @@ import Foundation
 
 class SnapKitConfigurator {
     
-    static var shared: SnapKitConfigurator = SnapKitConfigurator()
+    static var shared = SnapKitConfigurator()
     
     // MARK: Singleton
     private init () {}

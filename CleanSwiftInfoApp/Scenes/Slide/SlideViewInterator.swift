@@ -9,13 +9,14 @@
 import Foundation
 
 protocol SlideViewBuisnessLogic {
+    
     func prepareMenuItems()
 }
 
 class SlideViewInteractor: SlideViewBuisnessLogic {
     
     var presenter: SlideViewPresentationLogic?
-    // var worker: TypeWorker
+    // Note: var worker: TypeWorker
     
     // MARK: - SlideViewBuisnessLogic
     func prepareMenuItems() {

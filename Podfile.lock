@@ -1,20 +1,24 @@
 PODS:
   - SideMenu (5.0.3)
   - SnapKit (4.0.1)
+  - SwiftLint (0.29.0)
 
 DEPENDENCIES:
   - SideMenu
   - SnapKit (~> 4.0.0)
+  - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - SideMenu
     - SnapKit
+    - SwiftLint
 
 SPEC CHECKSUMS:
   SideMenu: 1dcaabce84538c53325c287f7fe62999379a641c
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SwiftLint: d4e7443d93e2bbe868dc302e6c7ac30b469d6a14
 
-PODFILE CHECKSUM: 5b386c9bb5e7437c625677382d587b49c54acc32
+PODFILE CHECKSUM: 47e0f7fbd596c006df2b1a5f18e08b751abe46b3
 
 COCOAPODS: 1.5.3

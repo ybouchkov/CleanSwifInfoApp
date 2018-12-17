@@ -9,7 +9,7 @@
 import Foundation
 
 protocol SlideViewPresentationLogic {
-    // func presentMenuItems(response: Response)
+    
     func presentMenuItems(response: SlideMenuItemResponse)
     
 }
@@ -21,6 +21,7 @@ class SlideViewPresenter: SlideViewPresentationLogic {
     
     // MARK: - SlideViewPresentationLogic
     func presentMenuItems(response: SlideMenuItemResponse) {
+        
         let menuViewModels: [SlideMenuItemViewModel] = response.actions.map { action in
             var menuItem: SlideMenuItemViewModel
             
@@ -63,7 +64,6 @@ class SlideViewPresenter: SlideViewPresentationLogic {
             return menuItem
         }
         
-        
         // You can add it here some sorted function by position paratmeters e.g
         viewController?.displayMenuItems(items: menuViewModels)
     }
@@ -87,4 +87,3 @@ class SlideViewPresenter: SlideViewPresentationLogic {
     }
     
 }
-

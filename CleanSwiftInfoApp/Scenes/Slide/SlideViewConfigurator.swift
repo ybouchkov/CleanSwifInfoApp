@@ -11,7 +11,7 @@ import Foundation
 class SlideViewConfigurator {
     
     // MARK: - Singleton
-    static var shared: SlideViewConfigurator = SlideViewConfigurator()
+    static var shared = SlideViewConfigurator()
     
     // MARK: - Init
     private init() {}
@@ -29,7 +29,5 @@ class SlideViewConfigurator {
         interactor.presenter = presenter
         
         router.viewController = viewController
-        // set data here if there it is...
-        // router.dataStore = interactor
     }
 }

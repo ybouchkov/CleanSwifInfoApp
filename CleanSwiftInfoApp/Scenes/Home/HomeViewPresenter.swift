@@ -9,6 +9,7 @@
 import Foundation
 
 protocol HomeViewPresentationLogic {
+    
     func presentSomething()
 }
 

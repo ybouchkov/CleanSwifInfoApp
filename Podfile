@@ -13,6 +13,8 @@ target 'CleanSwiftInfoApp' do
   #Layout Constraints
   pod 'SnapKit', '~> 4.0.0'
 
+  #SwiftLint
+  pod 'SwiftLint'
 
   target 'CleanSwiftInfoAppTests' do
     inherit! :search_paths

@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 enum MWGIconFont: UInt32 {
     
     case home = 0xe900
@@ -17,9 +16,7 @@ enum MWGIconFont: UInt32 {
     case office = 0xe903
     case newspaper = 0xe904
     case dice = 0xe915
-    
-    // TODO: Other Icons
-    
+        
     public func attributedString(size: CGFloat = CGFloat(12),
                                  color: UIColor? = nil) -> NSAttributedString? {
         guard let font = UIFont.iconFont(ofSize: size), let string = String.string(forIcon: self) else {

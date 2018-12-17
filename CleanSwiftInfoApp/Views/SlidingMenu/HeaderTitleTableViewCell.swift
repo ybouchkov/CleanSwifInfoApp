@@ -16,6 +16,7 @@ class HeaderTitleTableViewCell: UITableViewCell {
     // MARK: - Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         setup()
     }
     
@@ -28,7 +29,7 @@ class HeaderTitleTableViewCell: UITableViewCell {
 
 }
 
-// MARK: -  SlideMenuItemsConfigurable
+// MARK: - SlideMenuItemsConfigurable
 extension HeaderTitleTableViewCell: SlideMenuItemsConfigurable {
     
     func configure(item: SlideMenuItemItemRepresentable) {
@@ -36,5 +37,3 @@ extension HeaderTitleTableViewCell: SlideMenuItemsConfigurable {
     }
     
 }
-
-

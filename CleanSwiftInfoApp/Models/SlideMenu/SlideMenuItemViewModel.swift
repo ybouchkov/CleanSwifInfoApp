@@ -9,24 +9,27 @@
 import Foundation
 
 protocol SlideMenuItemsConfigurable {
+    
     func configure(item: SlideMenuItemItemRepresentable)
 }
 
 protocol SectionHeaederRepresentable {
+    
     var section: String? { get set }
 }
 
 protocol AccountInfoRepresentable {
+    
     var title: String? { get }
 }
 
 protocol ActionRepresentable {
+    
     var title: String? { get set }
     var icon: MWGIconFont? { get set }
 }
 
-// TODO: Add here for other items from the menu
-protocol SlideMenuItemItemRepresentable: AccountInfoRepresentable,SectionHeaederRepresentable, ActionRepresentable {}
+protocol SlideMenuItemItemRepresentable: AccountInfoRepresentable, SectionHeaederRepresentable, ActionRepresentable {}
 
 enum SlideMenuRepresentableItemFactory {
     
@@ -67,5 +70,3 @@ class SlideMenuItemViewModel: SlideMenuItem, TableViewCompatible, SlideMenuItemI
         super.init(for: action, at: position)
     }
 }
-
-

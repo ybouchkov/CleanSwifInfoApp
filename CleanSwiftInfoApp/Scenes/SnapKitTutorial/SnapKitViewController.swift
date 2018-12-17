@@ -10,7 +10,8 @@ import UIKit
 import SnapKit
 
 protocol SnapKitDisplayLogic {
-    // display something
+    
+    // Display something
 }
 
 /// Example of how we can use SnapKit.
@@ -25,17 +26,20 @@ class SnapKitViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.title = "SnapKit Simple example"
         runView()
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
         setup()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
         setup()
     }
     
@@ -50,7 +54,7 @@ class SnapKitViewController: UIViewController {
         
         // Making constraints
         snapKitView.snp.makeConstraints { (make) in
-//            make.left.right.bottom.top.equalTo(self.view) // first way
+            // Note: make.left.right.bottom.top.equalTo(self.view) // first way
             make.edges.equalTo(self.view) // second way
         }
     }

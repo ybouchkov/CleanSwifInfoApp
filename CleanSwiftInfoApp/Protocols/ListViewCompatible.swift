@@ -15,10 +15,11 @@ protocol ListViewCompatible {
 }
 
 protocol TableViewCompatible: ListViewCompatible {
+    
     // Add something
 }
 
 protocol CollectionViewCompatible: ListViewCompatible {
+    
     // Add something
 }
-

@@ -16,6 +16,7 @@ class SeparatorTableViewCell: UITableViewCell {
     // MARK: - Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         setup()
     }
     
@@ -25,9 +26,10 @@ class SeparatorTableViewCell: UITableViewCell {
 
 }
 
-// MARK:
+// MARK: SlideMenuItemsConfigurable
 extension SeparatorTableViewCell: SlideMenuItemsConfigurable {
+    
     func configure(item: SlideMenuItemItemRepresentable) {
-        // do something if needed
+        // Do something if needed
     }
 }
