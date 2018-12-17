@@ -8,6 +8,7 @@ excluded:
 disabled_rules: # rule identifiers to exclude from running
   - cyclomatic_complexity
   - trailing_whitespace
+  - overridden_super_call
 
 opt_in_rules:
   - empty_count
@@ -88,11 +89,6 @@ custom_rules:
     regex: '(^ +// +(?!swiftlint)[a-z]+)'
     message: "The first word of a comment should be capitalized"
     severity: error
-  comments_capitalized_find_possible_code: # from https://github.com/brandenr/swiftlintconfig
-    name: "Catch Commented Out Code"
-    regex: '(^ *// +(?!swiftlint)[a-z]+)'
-    message: "The first word of a comment should be capitalized"
-    severity: warning
   empty_first_line: # from https://github.com/brandenr/swiftlintconfig
     name: "Empty First Line"
     regex: '(^[ a-zA-Z ]*(?:protocol|extension|class|struct) (?!(?:var|let))[ a-zA-Z:]*\{\n *\S+)'

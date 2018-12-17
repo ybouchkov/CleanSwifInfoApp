@@ -200,18 +200,25 @@ class SnapKitView: UIView {
         setupAnimation()
         
         self.setNeedsLayout()
-        UIView.animate(withDuration: 0.5, animations: {
-            self.layoutIfNeeded()
-        }) { finished in
-            if finished {
-                self.timer = Timer.scheduledTimer(timeInterval: 3.0,
-                                                  target: self,
-                                                  selector: #selector(self.revertLogin),
-                                                  userInfo: nil,
-                                                  repeats: false)
-            }
-        }
+        
+        UIView.animate(withDuration: 0.5,
+                       animations: {
+                        self.layoutIfNeeded()
+        }, completion: { finished in
+                self.didFinish(finished)
+        })
         isAnimating = true
+    }
+    
+    private func didFinish(_ finished: Bool) {
+        if finished {
+            self.timer = Timer.scheduledTimer(timeInterval: 3.0,
+                                              target: self,
+                                              selector: #selector(self.revertLogin),
+                                              userInfo: nil,
+                                              repeats: false)
+        }
+
     }
     
     /// In real case, perform a login
@@ -238,16 +245,17 @@ class SnapKitView: UIView {
         
         self.setNeedsLayout()
         
-        UIView.animate(withDuration: 0.5, animations: {
-            self.layoutIfNeeded()
-        }) { finished in
+        UIView.animate(withDuration: 0.5,
+                       animations: {
+                        self.layoutIfNeeded()
+        }, completion: { finished in
             if finished {
                 self.timer.invalidate()
                 self.timer = nil
                 
                 self.isAnimating = false
             }
-        }
+        })
     }
     
     private func setupAnimation() {
