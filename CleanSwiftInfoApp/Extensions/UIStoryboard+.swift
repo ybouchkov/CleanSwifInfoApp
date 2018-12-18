@@ -15,6 +15,7 @@ enum Storyboard: String {
     case menu
     case home
     case snapkit
+    case alamofire
     
     var fileName: String {
         return rawValue.capitalizingFirstLetter()

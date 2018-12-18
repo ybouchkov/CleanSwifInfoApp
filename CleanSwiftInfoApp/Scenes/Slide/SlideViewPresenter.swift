@@ -38,9 +38,9 @@ class SlideViewPresenter: SlideViewPresentationLogic {
             case .home:
                 menuItem = SlideMenuItemViewModel(for: .home, at: 3)
                 setupActionTitleCellViewModel(menuItem, "Home", .office)
-            case .itemRow3:
-                menuItem = SlideMenuItemViewModel(for: .itemRow3, at: 4)
-                setupActionTitleCellViewModel(menuItem, "ItemRow3", .newspaper)
+            case .alamofire:
+                menuItem = SlideMenuItemViewModel(for: .alamofire, at: 4)
+                setupActionTitleCellViewModel(menuItem, "Using Alamofire", .newspaper)
             case .itemRow4:
                 menuItem = SlideMenuItemViewModel(for: .itemRow4, at: 5)
                 setupActionTitleCellViewModel(menuItem, "ItemRow4", .dice)

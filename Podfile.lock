@@ -1,24 +1,38 @@
 PODS:
+  - Alamofire (4.8.0)
+  - AlamofireNetworkActivityIndicator (2.3.0):
+    - Alamofire (~> 4.7)
+  - CodableAlamofire (1.1.0):
+    - Alamofire (~> 4.0)
   - SideMenu (5.0.3)
   - SnapKit (4.0.1)
   - SwiftLint (0.29.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - AlamofireNetworkActivityIndicator (~> 2.2)
+  - CodableAlamofire
   - SideMenu
   - SnapKit (~> 4.0.0)
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireNetworkActivityIndicator
+    - CodableAlamofire
     - SideMenu
     - SnapKit
     - SwiftLint
 
 SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  AlamofireNetworkActivityIndicator: 18346ff6d770d9513d0ac6f2d99706f40f93dbaa
+  CodableAlamofire: e2d2edcec7cf413f7862c30c8fa98eded27a83f9
   SideMenu: 1dcaabce84538c53325c287f7fe62999379a641c
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SwiftLint: d4e7443d93e2bbe868dc302e6c7ac30b469d6a14
 
-PODFILE CHECKSUM: 47e0f7fbd596c006df2b1a5f18e08b751abe46b3
+PODFILE CHECKSUM: 9ae54fe2b2627213c9cdd6e63dbe050baa3cb807
 
 COCOAPODS: 1.5.3

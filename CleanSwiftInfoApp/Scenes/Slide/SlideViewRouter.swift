@@ -26,6 +26,9 @@ class SlideViewRouter: SlideViewRoutingLogic {
         case .home:
             let homeScene = HomeViewController.instantiateFrom(appStoryboard: .home)
             viewController?.show(homeScene, sender: nil)
+        case .alamofire:
+            let alamofireScene = DataViewController.instantiateFrom(appStoryboard: .alamofire)
+            viewController?.show(alamofireScene, sender: nil)
         default:
             break
         }

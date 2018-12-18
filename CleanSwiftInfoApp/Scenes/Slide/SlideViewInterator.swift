@@ -25,7 +25,7 @@ class SlideViewInteractor: SlideViewBuisnessLogic {
             .firstSection,
             .snapKitTutorial,
             .home,
-            .itemRow3,
+            .alamofire,
             .itemRow4,
             .itemRow5,
             .separator,

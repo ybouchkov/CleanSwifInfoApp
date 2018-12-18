@@ -15,6 +15,15 @@ target 'CleanSwiftInfoApp' do
 
   #SwiftLint
   pod 'SwiftLint'
+  
+  # Networking
+  pod 'Alamofire', '~> 4.7'
+  
+  # Controls the visibility of the network activity indicator on iOS using Alamofire.
+  pod 'AlamofireNetworkActivityIndicator', '~> 2.2'
+
+  # An extension for Alamofire that converts JSON data into Decodable objects.
+  pod 'CodableAlamofire'
 
   target 'CleanSwiftInfoAppTests' do
     inherit! :search_paths

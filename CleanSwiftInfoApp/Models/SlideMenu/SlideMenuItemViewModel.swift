@@ -41,7 +41,7 @@ enum SlideMenuRepresentableItemFactory {
             return "SectionHeaderTitleCell"
         case .snapKitTutorial,
              .home,
-             .itemRow3,
+             .alamofire,
              .itemRow4,
              .itemRow5,
              .secondSectionRow1,
