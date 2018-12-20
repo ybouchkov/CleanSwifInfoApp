@@ -24,6 +24,9 @@ target 'CleanSwiftInfoApp' do
 
   # An extension for Alamofire that converts JSON data into Decodable objects.
   pod 'CodableAlamofire'
+  
+  # Image component - can asynchronously download an image
+  pod 'AlamofireImage', '~> 3.4'
 
   target 'CleanSwiftInfoAppTests' do
     inherit! :search_paths

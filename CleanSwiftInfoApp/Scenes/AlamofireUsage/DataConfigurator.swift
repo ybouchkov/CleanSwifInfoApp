@@ -29,6 +29,5 @@ class DataConfiguator {
         interactor.presenter = presenter
         
         router.viewController = viewController
-        
     }
 }

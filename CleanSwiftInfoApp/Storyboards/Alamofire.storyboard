@@ -16,9 +16,28 @@
                     <view key="view" contentMode="scaleToFill" id="I59-hS-1tg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hzU-zs-jzE">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="wpL-ZQ-YYZ" id="u0G-5K-ovy"/>
+                                    <outlet property="delegate" destination="wpL-ZQ-YYZ" id="jYQ-rM-mNT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bww-sl-nA1" firstAttribute="bottom" secondItem="hzU-zs-jzE" secondAttribute="bottom" id="pdl-s8-Sii"/>
+                            <constraint firstItem="hzU-zs-jzE" firstAttribute="top" secondItem="Bww-sl-nA1" secondAttribute="top" id="t5G-we-g30"/>
+                            <constraint firstItem="hzU-zs-jzE" firstAttribute="leading" secondItem="Bww-sl-nA1" secondAttribute="leading" constant="16" id="tzL-jQ-rgq"/>
+                            <constraint firstItem="Bww-sl-nA1" firstAttribute="trailing" secondItem="hzU-zs-jzE" secondAttribute="trailing" constant="16" id="ygb-Nk-scE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bww-sl-nA1"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="hzU-zs-jzE" id="VdB-S6-EM4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qa6-1H-OEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

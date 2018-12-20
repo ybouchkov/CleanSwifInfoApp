@@ -1,0 +1,17 @@
+//
+//  Release.xcconfig
+//  CleanSwiftInfoApp
+//
+//  Created by Yani Buchkov on 20.12.18.
+//  Copyright © 2018 Yani Buchkov. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+server_url = https://demo3893778.mockable.io
+
+timeout_interval = 120
+
+protocol = https

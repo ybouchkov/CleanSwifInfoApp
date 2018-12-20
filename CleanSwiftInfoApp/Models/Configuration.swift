@@ -9,45 +9,68 @@
 import Foundation
 import UIKit
 
-enum Enviroment: String {
-    case staging
-    case production
-    case release
+enum PlistError: Error {
     
-    var baseURL: String {
-        switch self {
-        case .staging:
-            return "" // url for staging
-        case .production:
-            return "" // url for the production
-        case .release:
-            return "" // url for the release
-        }
-    }
+    case invalidEnvironmentConfiguration(key: PlistKey)
     
-    var token: String {
-        switch self {
-        case .staging:
-            return "token=%staging-1234"
-        case .production:
-            return "token=%production-1234"
-        case .release:
-            return "token=%release-1234"
-        }
-    }
 }
 
-struct Configuration {
+enum PlistKey {
     
-    lazy var enviroment: Enviroment = {
-        if let configuration = Bundle.main.object(forInfoDictionaryKey: "Configuration") as? String {
-            if configuration.range(of: "Staging") != nil {
-                return Enviroment.staging
-            } else if configuration.range(of: "Production") != nil {
-                return Enviroment.production
-            }
+    case serverURL
+    case timeoutInterval
+    case connectionProtocol
+    
+    var value: String {
+        switch self {
+        case .serverURL:
+            return "server_url"
+        case .timeoutInterval:
+            return "timeout_interval"
+        case .connectionProtocol:
+            return "protocol"
         }
-        
-        return Enviroment.release
-    }()
+    }
+    
+//    func value1() -> String {
+//        switch self {
+//        case .serverURL:
+//            return "server_url"
+//        case .timeoutInterval:
+//            return "timeout_interval"
+//        case .connectionProtocol:
+//            return "protocol"
+//        }
+//    }
+}
+
+final class Enviroment {
+    
+    // MARK: - Singleton
+    static var shared = Enviroment()
+    
+    // MARK: - Init
+    private init() {}
+    
+    fileprivate var infoDict: [String: Any] {
+        if let dict = Bundle.main.infoDictionary {
+            return dict
+        } else {
+            fatalError("Plist connot be found")
+        }
+    }
+    
+    func configuration(_ key: PlistKey) -> String {
+        switch key {
+        case .serverURL:
+            guard let dict = infoDict[PlistKey.serverURL.value] as? String else { fatalError("Cannot find Server_URL!!!") }
+            return dict
+        case .timeoutInterval:
+            guard let dict = infoDict[PlistKey.timeoutInterval.value] as? String else { fatalError("Time_Interval is missing!!!") }
+            return dict
+        case .connectionProtocol:
+            guard let dict = infoDict[PlistKey.connectionProtocol.value] as? String else { fatalError("Protocol is missing!!!") }
+            return dict
+        }
+    }
 }

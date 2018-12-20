@@ -19,6 +19,8 @@ class DataViewController: UIViewController, DataViewDisplayLogic {
     var router: DataRouteLogic?
     var interactor: DataBuisnessLogic?
         
+    @IBOutlet private weak var tableView: UITableView!
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +44,25 @@ class DataViewController: UIViewController, DataViewDisplayLogic {
     
     // MARK: - Set up
     private func setup() {
+        self.title = "Simple REST requests"
         DataConfiguator.shared.configure(withController: self)
+    }
+}
+
+typealias ViewControllerSource = DataViewController
+
+// MARK: - DataViewController & UITableViewDataSource
+extension ViewControllerSource: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 0 // data provider here
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10 // data provider here
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
 }

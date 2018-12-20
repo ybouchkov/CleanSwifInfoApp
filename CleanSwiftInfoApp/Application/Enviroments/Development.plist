@@ -2,8 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Configuration</key>
-	<string>$(CONFIGURATION)</string>
+	<key>timeout_interval</key>
+	<string>$(timeout_interval)</string>
+	<key>protocol</key>
+	<string>$(protocol)</string>
+	<key>server_url</key>
+	<string>$(server_url)</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
